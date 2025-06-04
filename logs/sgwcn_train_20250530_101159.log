@@ -1,0 +1,11 @@
+2025-05-30 10:11:59,165 - INFO - Starting SGWCN training with config: SGWCNConfig(input_dim=3, hidden_dims=[32, 64], num_classes=40, num_time_steps=4, k_neighbors=10, chebyshev_order=3, beta=1.0, lambda_param=1.0, epsilon=1e-06, use_faiss=True, tau_mem=20.0, theta_pos=1.0, theta_neg=-1.0, batch_size=8, learning_rate=0.001, weight_decay=0.0001, num_epochs=5, warmup_epochs=10, data_root='data/modelnet40_ply_hdf5_2048', num_points=512, normalize=True, augmentation=True, cache_data=False, num_workers=0, optimizer='adam', scheduler='cosine', step_size=50, gamma=0.1, gradient_clip=1.0, dropout=0.1, label_smoothing=0.1, use_class_weights=True, save_dir='checkpoints', log_dir='logs', save_freq=1, eval_freq=1, print_freq=10, resume=None, pretrained=None, device='cuda', seed=42, use_amp=True, compile_model=False, early_stopping=True, patience=20, min_delta=0.0001, surrogate_grad_beta=1.0, readout_mode='rate')
+2025-05-30 10:11:59,166 - INFO - Creating data loaders...
+2025-05-30 10:12:01,886 - INFO - Train batches: 1230, Test batches: 309
+2025-05-30 10:12:01,887 - INFO - Creating model...
+2025-05-30 10:12:02,035 - INFO - Model parameters: 46,344
+2025-05-30 10:12:02,366 - INFO - Starting training...
+2025-05-30 10:12:02,427 - INFO - Loading faiss with AVX2 support.
+2025-05-30 10:12:02,427 - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-05-30 10:12:02,427 - INFO - Loading faiss.
+2025-05-30 10:12:02,447 - INFO - Successfully loaded faiss.
