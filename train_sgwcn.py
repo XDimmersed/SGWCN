@@ -47,6 +47,7 @@ def create_model(config: SGWCNConfig) -> SGWCNClassifier:
         input_dim=config.input_dim,
         hidden_dims=config.hidden_dims,
         num_classes=config.num_classes,
+        num_points=config.num_points,
         num_time_steps=config.num_time_steps,
         k_neighbors=config.k_neighbors,
         chebyshev_order=config.chebyshev_order,
