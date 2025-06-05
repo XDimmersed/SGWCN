@@ -5,8 +5,7 @@ Complete integration of all core innovations
 
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-from typing import Tuple, List, Dict, Optional
+from typing import List, Dict
 
 from .graph_builder import SparseGraphBuilder
 from .wavelet_conv import AdaptiveGraphWaveletConv

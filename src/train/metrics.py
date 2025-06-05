@@ -4,7 +4,7 @@ Evaluation metrics for SGWCN
 
 import torch
 import numpy as np
-from typing import Dict, List, Tuple
+from typing import Dict
 from sklearn.metrics import (
     accuracy_score,
     precision_score,
@@ -75,10 +75,10 @@ def compute_top_k_accuracy(
     Returns:
         Top-k accuracy
     """
-    logits = logits.cpu().numpy()
+    probs = torch.softmax(logits, dim=1).cpu().numpy()
     targets = targets.cpu().numpy()
-    
-    return top_k_accuracy_score(targets, logits, k=k)
+
+    return top_k_accuracy_score(targets, probs, k=k)
 
 
 def compute_confusion_matrix(
