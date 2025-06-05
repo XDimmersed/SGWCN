@@ -8,10 +8,7 @@ import numpy as np
 import torch
 from torch.utils.data import Dataset, DataLoader
 import os
-import json
-from typing import Tuple, List, Optional
-import warnings
-import random
+from typing import Tuple
 
 
 class ModelNet40Dataset(Dataset):
