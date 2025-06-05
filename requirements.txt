@@ -7,7 +7,6 @@ scipy>=1.7.0
 
 # Data processing
 h5py>=3.7.0
-scikit-learn>=1.0.0
 
 # Visualization
 matplotlib>=3.5.0
@@ -27,8 +26,6 @@ flake8>=4.0.0
 
 # Utilities
 pyyaml>=6.0
-argparse
-dataclasses
 typing-extensions>=4.0.0
 
 # Point cloud processing
@@ -44,7 +41,7 @@ torch-spline-conv==1.2.2
 # Scientific computing
 scikit-learn>=1.0.2
 
-# Data processing and visualization  
+# Data processing and visualization
 plotly>=5.0.0
 
 # Utilities
@@ -53,4 +50,4 @@ wandb>=0.13.0
 
 # Development tools
 jupyter>=1.0.0
-ipywidgets>=7.6.0 
+ipywidgets>=7.6.0
